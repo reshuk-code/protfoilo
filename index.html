@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Prot-Foilo</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrp link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav id="nav" class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="index.html"><h1>prot<span>foilo</span></h1></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: 25px;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mx-5" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutme">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#my-project">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" id="searchForm">
+        <input id="input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="button" class="btn btn-outline-none my-2 my-sm-0 mx-2" style="background-color: #addafa;" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <!-- Add this inside the <nav> element, after the <form> element for the search bar -->
+<button id="themeToggle" class="btn btn-outline-secondary my-2 my-sm-0 mx-2 d-flex">
+  <i class="fas fa-moon"></i>
+</button>
+
+    </div>
+  </nav>
+
+  <div id="searchPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h3 id="searchResult"></h3>
+      <div id="searchContent"></div>
+    </div>
+  </div>
+  <!-- Your content here -->
+
+  <!-- Back to top button -->
+  <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up-short-wide"></i></button>
+
+
+
+
+    <div id="aboutme">
+        <div id="aboutme-text">
+            <h1>
+                Hi i'am Prot<span>Foilo</span>, <br> i'am a Web Designer!
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dolorum ut minima distinctio illo aspernatur. Sit adipisci accusamus possimus, voluptatem, officia mollitia, vel sint id magni magnam dolor soluta porro? lo</p>
+        <div id="aboutme-button">
+            <button class="alert" id="myProjectButton">My Projects</button>
+        </div>
+        </div>
+        <div id="aboutme-image">
+ <img src="./images/profile.png" alt="image">
+        </div>
+
+    </div>
+<div id="my-project">
+  <div id="myproject-text">
+    <h1>Prot<Span>Foilo</Span> 
+     projects
+    </h1>
+    <div id="project-section-main">
+        <div id="project">
+            <h3>Project-1</h3>
+            <img src="https://dummyimage.com/350x350/252525/e3f2fd" alt="">
+            <span>Name : *only for presentation</span>
+        </div>
+        <div id="project">
+            <h3>Project-2</h3>
+        <img src="https://dummyimage.com/350x350/252525/e3f2fd" alt="">
+        <span>Name : *only for presentation</span>
+        </div>
+        <div id="project">
+            <h3>Project-3</h3>
+        <img src="https://dummyimage.com/350x350/252525/e3f2fd" alt="">
+        <span>Name : *only for presentation</span>
+        </div>
+        
+    </div>
+  </div>
+  <div id="image-webdev">
+</div>
+</div>
+<!-- back to top -->
+<button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up-short-wide"></i></button>
+
+<!-- footer -->
+<footer class=" text-black pt-4 pb-4" style="background-color: #addafa;">
+  <div class="container text-center text-md-left">
+    <div class="row">
+      <!-- About Me -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">About Me</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptates quam eum dignissimos ab, nemo quod adipisci ea quia corrupti sunt fugit dolorum maiores. Impedit, minus! Dignissimos, perspiciatis accusamus. Placeat.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+        <p><a href="#aboutme" class="text-dark" style="text-decoration: none;">Home</a></p>
+        <p><a href="#aboutme" class="text-dark" style="text-decoration: none;">About Me</a></p>
+        <p><a href="#my-project" class="text-dark" style="text-decoration: none;">My Projects</a></p>
+        <p><a href="#contact" class="text-dark" style="text-decoration: none;">Contact</a></p>
+      </div>
+      
+    
+      
+      <!-- Contact -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+        <p><i class="fas fa-home mr-3"></i> Biratnagar, Nepal</p>
+        <p><i class="fas fa-envelope mr-3"></i> email@example.com</p>
+        <p><i class="fas fa-phone mr-3"></i> +977 123456789</p>
+        <p><i class="fas fa-print mr-3"></i> +977 987654321</p>
+      </div>
+    </div>
+    
+    <hr class="mb-4">
+    
+    <div class="row align-items-center">
+      <!-- Social Media -->
+      <div class="col-md-7 col-lg-8">
+        <p class="text-center text-md-left">© 2024 Copyright: Developed by <a href="https://www.facebook.com/reshuk.sapkota">Reshuk Sapkota</a>
+          <a href="#" class="text-white" style="text-decoration: none;">
+            <strong><h1>Prot<Span>Foilo</Span></h1></strong>
+          </a>
+        </p>
+      </div>
+      
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const myProjectButton = document.getElementById('myProjectButton');
+
+  myProjectButton.addEventListener('click', () => {
+    document.getElementById('my-project').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+<script src="script.js"></script>
+<script src="nav.js"></script>
+<script src="search.js"></script>
+<!-- bootstrap link js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

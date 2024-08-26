@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    font-family: 'Poppins';
+    font-weight: 500;
+   scroll-behavior: smooth;
+  
+}
+body{
+    overflow: auto;
+}
+#aboutme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 100vh;
+    margin: 50px;
+}
+
+#aboutme #aboutme-text > h1{
+    display: block;
+    text-overflow: clip;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 50px;
+
+}
+h1  span{
+    color: #b62d2d;
+    text-decoration: line-through;
+}
+#aboutme #aboutme-text > p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+  
+}
+#aboutme #aboutme-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+#aboutme #aboutme-image> img{
+    width: 60%;
+    position: relative;
+    filter: drop-shadow(0 0 0.75rem #2fa0f0);
+    transition: 0.5s ease;  
+    cursor: pointer;   
+    opacity: 50%;
+}
+#aboutme #aboutme-image> img:hover{
+    filter: drop-shadow(0 6mm 4mm rgb(83, 86, 95));
+    opacity: 100%;
+}
+
+#aboutme-button > button{
+    border: none;
+    outline: none;
+}
+#aboutme-button > button:hover{
+    content: '>>';
+    background-color: #2fa0f0;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+.form-inline .form-control {
+    width: auto;
+    flex: 1;
+  }
+#my-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px;
+    padding: 10px;
+    
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px  10px  #ede8e8;
+    transition: 0.5s ease;
+}
+#my-project:hover{
+    box-shadow: none;
+}
+#project-section-main{
+
+width: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: left;
+align-items: start;
+margin-left: 10px;
+}
+#project-section-main #project{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+#project-section-main #project > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+}
+ #input{
+    background-color: #9acff5;
+    outline: none;
+    border: none;
+    color: #e3f2fd;
+    padding: 10px;
+    outline: none !important;
+}
+ form{
+    background-color: #9acff5;
+    border-radius: 10px;
+}
+.btn-outline-primary{
+    background-color:#e3f2fd ;
+    border: none ;
+    outline: none ;
+    padding: 10px;
+
+}
+/* Popup container */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    margin-bottom: 100px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.758); /* Black w/ opacity */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */  
+}
+  
+  /* Popup content */
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.dark-mode #input{
+    background-color: #1f1f1f;
+    outline: none;
+    border: none;
+    color: #e3f2fd;
+    padding: 10px;
+}
+.dark-mode form{
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+.dark-mode .btn-outline-primary {
+    background-color: #1f1f1f !important;
+    border: none;
+    outline: none;
+    padding: 10px;
+
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #e0e0e0;
+}
+
+.dark-mode #my-project {
+    background-color: #1e1e1e;
+}
+
+.dark-mode footer {
+    background-color: #1e1e1e !important;
+}
+.dark-mode a{
+    color: #e0e0e0;
+}
+.dark-mode .btn-outline-primary {
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+/* Additional styles for dark mode */
+.dark-mode .popup-content {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode #backToTop {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode #backToTop:hover {
+    background-color: #333;
+}
+/* Dark mode styles for navbar */
+.dark-mode .navbar {
+    background-color: #343a40; /* Dark background for navbar */
+}
+.dark-mode #myProjectButton{
+    background-color: #1e1e1e;
+    color: #e3f2fd;
+    transition: 0.5s ease;
+}
+.dark-mode #myProjectButton:hover{
+    background-color:#e3f2fd;
+    color: #121212;
+}
+.dark-mode
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #e0e0e0; /* Light text color for navbar links */
+}
+
+.dark-mode .navbar-light {
+    color: #e0e0e0; 
+    background-color: #343a40;/* Light text color for navbar brand */
+}
+.dark-mode {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.dark-mode .navbar {
+    background-color: #333 !important; /* Navbar background in dark mode */
+    color: #fff !important;           /* Navbar text color in dark mode */
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #fff !important;           /* Nav links color in dark mode */
+}
+
+.dark-mode .navbar-light .navbar-brand {
+    color: #fff !important;           /* Navbar brand color in dark mode */
+}
+
+.dark-mode .navbar-toggler {
+    background-color: #fff !important; /* Hamburger icon background in dark mode */
+    color: #333 !important;            /* Hamburger icon color in dark mode */
+}
+.dark-mode #my-project{
+    box-shadow: none;
+}
+
+
+
+@media only screen and (max-width: 999px) {
+    #aboutme{
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
+      #my-project{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        margin: 30px; 
+    }
+    #project-section-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        
+    }
+    
+    }
+
+
+  
+      /* back to top */
+      #backToTop {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #555; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #backToTop:hover {
+        background-color: #333; /* Add a dark-grey background on hover */
+      }
